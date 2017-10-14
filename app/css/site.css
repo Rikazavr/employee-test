@@ -1,0 +1,179 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+ol, ul {
+  list-style: none; }
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #FAFAFA;
+  color: #000; }
+
+.container {
+  width: 988px;
+  margin: 39px auto 0 auto;
+  font-size: 18px;
+  line-height: 1.45em;
+  text-align: center; }
+
+.container__title {
+  font-size: 30px;
+  line-height: 1.34em; }
+
+.pricing-table {
+  margin-top: 22px; }
+
+.package {
+  float: left;
+  width: 318px;
+  margin-top: 35px;
+  padding: 19px 19px 30px 19px;
+  box-sizing: border-box;
+  border: 2px solid;
+  background-color: #fff;
+  font-size: 15px; }
+
+.package_left {
+  border-radius: 8px 0px 0px 8px;
+  border-color: #A5B4BB; }
+
+.package_right {
+  border-radius: 0px 8px 8px 0px;
+  border-color: #3984A7; }
+
+.package__title {
+  font-size: 22px;
+  line-height: 1.46em;
+  text-align: center; }
+
+.hor-line {
+  height: 1px;
+  background-color: #C4C4C4; }
+
+.package__hor-line {
+  margin-top: 14px; }
+
+.option-list__item {
+  margin-top: 13px;
+  text-align: left;
+  line-height: 22px; }
+
+.option-list__icon {
+  margin-right: 8px;
+  line-height: 22px;
+  vertical-align: middle; }
+
+.option-list__checkbox + label {
+  cursor: pointer; }
+
+.option-list__checkbox:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.option-list__checkbox:not(checked) + label {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 40px; }
+
+.option-list__checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid #5EC3EA;
+  background: #fff; }
+
+.option-list__checkbox:not(checked) + label:after {
+  display: none;
+  content: '';
+  position: absolute;
+  background: url("../images/tick.svg") center no-repeat;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px; }
+
+.option-list__checkbox:checked + label:before {
+  background: #5EC3EA; }
+
+.option-list__checkbox:checked + label:after {
+  display: block; }
+
+.option-list__hor-line {
+  margin: 23px 0 13px 0; }
+
+.price {
+  line-height: 1.47em; }
+
+.button {
+  height: 40px;
+  width: 144px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #62C3E8; }
+
+.button:hover {
+  background-color: #26A0CB; }
+
+.option-list__button {
+  margin-top: 14px; }
+
+.wrapper {
+  position: relative; }
+
+.package_premium {
+  width: 356px;
+  position: relative;
+  padding: 19px 37px 30px 37px;
+  margin: 0 -2px;
+  border: 3px solid #41C1F1;
+  border-radius: 8px;
+  font-weight: bold; }
+
+.list__item {
+  display: flex; }
+
+.list__icon {
+  margin-right: 20px; }
+
+.button_premium {
+  width: 276px;
+  margin-top: 8px;
+  background-color: #FF5F6D; }
+
+.button_premium:hover {
+  background-color: #FF4658; }
+
+.list__item_gift {
+  width: 263px;
+  height: 26px;
+  line-height: 24px;
+  background-color: #41C1F1;
+  border-radius: 0 26px 26px 0;
+  color: #fff;
+  display: inline-block; }
