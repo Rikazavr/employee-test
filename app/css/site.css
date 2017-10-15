@@ -16,6 +16,20 @@ menu, nav, section, summary {
 ol, ul {
   list-style: none; }
 
+@font-face {
+  font-family: 'ALSRubl-Tahoma';
+  src: url("../fonts/tahoma/alsrubl-tahoma-regular.eot");
+  src: url("../fonts/tahoma/alsrubl-tahoma-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/tahoma/alsrubl-tahoma-regular.woff") format("woff"), url("../fonts/tahoma/alsrubl-tahoma-regular.ttf") format("truetype"), url("../fonts/tahoma/alsrubl-tahoma-regular.svg#ALSRublTahomaItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ALSRubl-Tahoma';
+  src: url("../fonts/tahoma/alsrubl-tahoma-bold.eot");
+  src: url("../fonts/tahoma/alsrubl-tahoma-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/tahoma/alsrubl-tahoma-bold.woff") format("woff"), url("../fonts/tahoma/alsrubl-tahoma-bold.ttf") format("truetype"), url("../fonts/tahoma/alsrubl-tahoma-bold.svg#ALSRublTahomaItalic") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 body {
   font-family: 'Noto Sans', sans-serif;
   background-color: #FAFAFA;
@@ -129,6 +143,9 @@ body {
 
 .ruble-icon {
   height: 11px; }
+
+.ruble {
+  font-family: 'ALSRubl-Tahoma'; }
 
 .button {
   height: 40px;
