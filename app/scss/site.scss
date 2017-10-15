@@ -1,18 +1,13 @@
-// reset
+// quick reset
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p,
+a, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub,
+b, u, i, center, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+figure, figcaption, footer, header, 
+menu, nav, section, summary{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,7 +19,9 @@ ol, ul {
 	list-style: none;
 }
 
+
 // styles
+
 
 body{
     font-family: 'Noto Sans', sans-serif;
@@ -37,26 +34,28 @@ body{
 	margin: 39px auto 0 auto;
 	font-size: 18px;
 	line-height: 1.45em;
-	// letter-spacing: 1.67;
 	text-align: center;
+	// letter-spacing: 0.67px;
 }
 
 .container__title{
 	font-size: 30px;
 	line-height: 1.34em;
-    // letter-spacing: 1.33;
+    // letter-spacing: 0.33px;
 }
 
+
+// pricing table
+
 .pricing-table{
-	// display: flex;
-	margin-top: 22px;
+	margin-top: 64px;
 }
 
 .package{
 	float: left;
 	width: 318px;
-	margin-top: 35px; // проверь это
-	padding: 19px 19px 30px 19px;
+	margin-top: 35px;
+	padding: 19px 18px 28px;
 	box-sizing: border-box;
     border: 2px solid;
     background-color: #fff;
@@ -88,23 +87,29 @@ body{
 	margin-top: 14px;
 }
 
-.option-list{
-	
-}
+
+//  option list
+
 
 .option-list__item{
 	margin-top: 13px;
 	text-align: left;
-	// border: 1px solid green;
-	line-height: 22px;
+}
+
+.icon-wrapper{
+    width: 30px;
+    height: 22px;
+    text-align: center;
+}
+
+.option-list__icon-wrapper{
+    margin-right: 8px;
 }
 
 .option-list__icon{
-	margin-right: 8px;
-	line-height: 22px;
-	vertical-align: middle;  // think about it!
+	vertical-align: middle;
 }
-    
+
 .option-list__checkbox + label {
 	cursor: pointer;
 }
@@ -115,15 +120,16 @@ body{
 }
 
 .option-list__checkbox:not(checked) + label {
-	display: inline-block;
+	display: flex;
+	line-height: 20px;
 	position: relative;
-	padding: 0 0 0 40px;
+	padding: 0 0 0 36px;
 }
 
 .option-list__checkbox:not(checked) + label:before {
 	content: '';
 	position: absolute;
-	top: 0;
+	top: 1px; // think about it!
 	left: 0;
 	width: 20px;
 	height: 20px;
@@ -160,18 +166,16 @@ body{
 	line-height: 1.47em;
 }
 
-.option-list__price{
-    // line-height: 1em;
+.ruble-icon{
+	height: 11px;
 }
 
-.price_premium{
-	
-}
+
+//  buttons
 
 .button{
 	height: 40px;
 	width: 144px;
-	// line-height: 40px;
 	font-size: 17px;
 	font-weight: bold;
 	color: #fff;
@@ -189,41 +193,121 @@ body{
 	margin-top: 14px;
 }
 
-.wrapper{
-	position: relative;
-}
+
+//  premium package
 
 .package_premium{
-	width: 356px;
 	position: relative;
-	padding: 19px 37px 30px 37px;
     margin: 0 -2px;
+	width: 356px;
+	padding: 19px 37px 30px 37px;
     border: 3px solid #41C1F1;
     border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     font-weight: bold;
 }
 
-// .package_premium::before{
-// 	content: " ";
-// 	display: block;
-// 	position: absolute;
-// 	top: 0;
-// 	right: 0;
-// 	height: 60px;
-// 	width: 60px;
-// 	background-color: #000;
-// }
+.package_premium::before{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: -42px;
+	right: -22px;
+	height: 97px;
+	width: 152px;
+	background: url("../images/badge.svg") center no-repeat;
+}
 
-.list{
-	
+
+//  premium option list
+
+.package__list{
+    margin-bottom: 12px;
 }
 
 .list__item{
 	display: flex;
+    height: 22px;
+	line-height: 20px;
+	margin-top: 19px;
 }
 
 .list__icon{
-	margin-right: 20px;
+    margin-right: 23px;
+}
+
+.list__icon:before {
+    display: inline-block;
+    height: 22px;
+    vertical-align: middle;
+    content: "";
+}
+
+.list__icon img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.list__item_gift{
+    position: relative;
+    height: 26px;
+    line-height: 24px;
+    padding-left: 54px;
+    border-radius: 26px;
+    color: #fff;
+}
+
+.list__item_gift_fly{
+    background-color: #41C1F1;
+}
+
+.list__item_gift_fly:before {
+    content: "";
+    width: 36px;
+    height: 39px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background: url(../images/fly.svg) center no-repeat;
+}
+
+.list__item_gift_choko{
+    background-color: #7D5B52;
+}
+
+.list__item_gift_choko:before {
+    content: "";
+    width: 58px;
+    height: 40px;
+    position: absolute;
+    top: -11px;
+    left: -5px;
+    background: url(../images/choko.svg) center no-repeat;
+}
+
+.price__sup-text{
+	position: relative;
+	color: #6A747A;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 14px;
+}
+
+.price__sup-text:before {
+  position: absolute;
+  width: 45px;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: #FF1818;
+  
+  -webkit-transform:rotate(-8deg);
+  -moz-transform:rotate(-8deg);
+  -ms-transform:rotate(-8deg);
+  -o-transform:rotate(-8deg);
+  transform:rotate(-8deg);
 }
 
 .button_premium{
@@ -234,14 +318,4 @@ body{
 
 .button_premium:hover{
 	background-color: #FF4658;
-}
-
-.list__item_gift{
-    width: 263px;
-    height: 26px;
-    line-height: 24px;
-    background-color: #41C1F1;
-    border-radius: 0 26px 26px 0;
-    color: #fff;
-    display: inline-block;
 }

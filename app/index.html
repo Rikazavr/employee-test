@@ -4,7 +4,6 @@
     <head>
         <meta charset="utf-8">
         <title>test</title>
-        
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/site.css">
     </head>
@@ -24,110 +23,134 @@
                         <div class="option-list__item">
                             <input type="checkbox" class="option-list__checkbox" id="math" value="math">
                             <label for="math">
-                                <img alt="icon" src="images/dinologo.svg" class="option-list__icon">
+                                <div class="icon-wrapper option-list__icon-wrapper">
+                                    <img alt="icon" src="images/dinologo.svg" class="option-list__icon">
+                                </div>
                                 Математика
                             </label>
                         </div>
                         <div class="option-list__item">
                             <input type="checkbox" class="option-list__checkbox" id="rus" value="rus">
                             <label for="rus">
-                                <img alt="icon" src="images/rus.svg" class="option-list__icon">
+                                <div class="icon-wrapper option-list__icon-wrapper">
+                                    <img alt="icon" src="images/rus.svg" class="option-list__icon">
+                                </div>
                                 Русский язык
                             </label>
                         </div>
                         <div class="option-list__item">
                             <input type="checkbox" class="option-list__checkbox" id="eng" value="eng">
                             <label for="eng">
-                                <img alt="icon" src="images/eng.svg" class="option-list__icon">
+                                <div class="icon-wrapper option-list__icon-wrapper">
+                                    <img alt="icon" src="images/eng.svg" class="option-list__icon">
+                                </div>
                                 Английский язык
                             </label>
                         </div>
                         <div class="option-list__item">
                             <input type="checkbox" class="option-list__checkbox" id="world" value="world">
                             <label for="world">
+                                <div class="icon-wrapper option-list__icon-wrapper">
                                 <img alt="icon" src="images/bird.svg" class="option-list__icon">
+                                </div>
                                 Окружающий мир
                             </label>
                         </div>
                         <div class="hor-line option-list__hor-line"></div>
-                        <p class="price option-list__price">К оплате: 1980 &#8381</p>
+                        <!--<p class="price option-list__price">К оплате: 1980 &#8381</p>-->
+                        <p class="price option-list__price">К оплате: 1980 <img alt="ruble" class="ruble-icon" src="images/ruble.svg"></p>
                         <button class="button option-list__button">Купить</button>
                     </div>
                 </div>
                 
-                <!--<div class="wrapper">-->
-                    <div class="package package_premium">
-                        <h2 class="package__title">4 предмета</h2>
-                        <div class="package__hor-line"></div>
-                        <ul class="list">
-                            <li class="list__item">
-                                <img class="list__icon" alt="icon" src="images/dinologo.svg">
-                                <p>Математика</p>
-                            </li>
-                            <li class="list__item">
-                                <img class="list__icon" alt="icon" src="images/rus.svg">
-                                <p>Русский язык</p>
-                            </li>
-                            <li class="list__item">
-                                <img class="list__icon" alt="icon" src="images/eng.svg">
-                                <p>Английский язык</p>
-                            </li>
-                            <li class="list__item">
-                                <img class="list__icon" alt="icon" src="images/bird.svg">
-                                <p>Окружающий мир</p>
-                            </li>
-                            <li class="list__item list__item_gift">
-                                <img class="list__icon" alt="icon" src="images/choko.svg">
-                                <p>Подарок "Счет на лету"</p>
-                            </li>
-                            <li class="list__item list__item_gift">
-                                <img class="list__icon" alt="icon" src="images/fly.svg">
-                                <p>Подарок "Шоколадки"</p>
-                            </li>
-                        </ul>
-                        <p class="price price_premium">К оплате: 1980 &#8381</p>
-                        <button class="button button_premium">Купить</button>
-                    </div>
-                <!--</div>-->
+                <div class="package package_premium">
+                    <h2 class="package__title">4 предмета</h2>
+                    <div class="hor-line package__hor-line"></div>
+                    <ul class="list package__list">
+                        <li class="list__item">
+                            <div class="icon-wrapper list__icon">
+                                <img alt="icon" src="images/dinologo.svg">
+                            </div>                                
+                            <p>Математика</p>
+                        </li>
+                        <li class="list__item">
+                            <div class="icon-wrapper list__icon">
+                                <img alt="icon" src="images/rus.svg">
+                            </div>
+                            <p>Русский язык</p>
+                        </li>
+                        <li class="list__item">
+                            <div class="icon-wrapper list__icon">
+                                <img alt="icon" src="images/eng.svg">
+                            </div>
+                            <p>Английский язык</p>
+                        </li>
+                        <li class="list__item">
+                            <div class="icon-wrapper list__icon">
+                                <img alt="icon" src="images/bird.svg">
+                            </div>
+                            <p>Окружающий мир</p>
+                        </li>
+                        <li class="list__item list__item_gift list__item_gift_fly">
+                            <p>Подарок "Счет на лету"</p>
+                        </li>
+                        <li class="list__item list__item_gift list__item_gift_choko">
+                            <p>Подарок "Шоколадки"</p>
+                        </li>
+                    </ul>
+                    <p class="price price_premium">К оплате: 4900 &#8381 <sup class="price__sup-text">7920 Р</sup></p>
+                    <button class="button button_premium">Купить</button>
+                </div>
                 
                 <div class="package package_right">
                     <h2 class="package__title">2 предмета</h2>
-                    <div class="package__hor-line"></div>
+                    <div class="hor-line package__hor-line"></div>
                     <div class="option-list">
                         <div class="option-list__item">
-                            <input type="checkbox" class="option-list__checkbox" id="math" value="math">
-                            <label for="math">
-                                <img alt="icon" src="images/dinologo.svg" class="option-list__icon">
+                            <input type="checkbox" class="option-list__checkbox" id="math1" value="math">
+                            <label for="math1">
+                                <div class="icon-wrapper option-list__icon-wrapper">
+                                    <img alt="icon" src="images/dinologo.svg" class="option-list__icon">
+                                </div>
                                 Математика
                             </label>
                         </div>
                         <div class="option-list__item">
-                            <input type="checkbox" class="option-list__checkbox" id="rus" value="rus">
-                            <label for="rus">
-                                <img alt="icon" src="images/rus.svg" class="option-list__icon">
+                            <input type="checkbox" class="option-list__checkbox" id="rus1" value="rus">
+                            <label for="rus1">
+                                <div class="icon-wrapper option-list__icon-wrapper">
+                                    <img alt="icon" src="images/rus.svg" class="option-list__icon">
+                                </div>
                                 Русский язык
                             </label>
                         </div>
                         <div class="option-list__item">
-                            <input type="checkbox" class="option-list__checkbox" id="eng" value="eng">
-                            <label for="eng">
-                                <img alt="icon" src="images/eng.svg" class="option-list__icon">
+                            <input type="checkbox" class="option-list__checkbox" id="eng1" value="eng">
+                            <label for="eng1">
+                                <div class="icon-wrapper option-list__icon-wrapper">
+                                    <img alt="icon" src="images/eng.svg" class="option-list__icon">
+                                </div>
                                 Английский язык
                             </label>
                         </div>
                         <div class="option-list__item">
-                            <input type="checkbox" class="option-list__checkbox" id="world" value="world">
-                            <label for="world">
+                            <input type="checkbox" class="option-list__checkbox" id="world1" value="world">
+                            <label for="world1">
+                                <div class="icon-wrapper option-list__icon-wrapper">
                                 <img alt="icon" src="images/bird.svg" class="option-list__icon">
+                                </div>
                                 Окружающий мир
                             </label>
                         </div>
                         <div class="hor-line option-list__hor-line"></div>
-                        <p class="price option-list__price">К оплате: 3700 &#8381</p>
+                        <p class="price option-list__price">К оплате: 3700 <img alt="ruble" class="ruble-icon" src="images/ruble.svg"></p>
                         <button class="button option-list__button">Купить</button>
                     </div>
+                    
                 </div>
+                
             </div>
+            
         </div>
         
     </body>

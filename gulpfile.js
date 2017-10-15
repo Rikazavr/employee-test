@@ -12,6 +12,7 @@ gulp.task('browserSync', function() {
   })
 })
 
+
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
@@ -21,14 +22,16 @@ gulp.task('sass', function() {
     }))
 });
 
+
 gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']); 
   gulp.watch('app/*.html', browserSync.reload); 
   gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
-// gulp.task('useref', function(){
-//   return gulp.src('app/*.html')
-//     .pipe(useref())
-//     .pipe(gulp.dest('dist'))
-// });
+
+gulp.task('useref', function(){
+  return gulp.src('app/*.html')
+    .pipe(useref())
+    .pipe(gulp.dest('dist'))
+});
