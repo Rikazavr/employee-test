@@ -16,20 +16,6 @@ menu, nav, section, summary {
 ol, ul {
   list-style: none; }
 
-@font-face {
-  font-family: 'ALSRubl-Tahoma';
-  src: url("../fonts/tahoma/alsrubl-tahoma-regular.eot");
-  src: url("../fonts/tahoma/alsrubl-tahoma-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/tahoma/alsrubl-tahoma-regular.woff") format("woff"), url("../fonts/tahoma/alsrubl-tahoma-regular.ttf") format("truetype"), url("../fonts/tahoma/alsrubl-tahoma-regular.svg#ALSRublTahomaItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'ALSRubl-Tahoma';
-  src: url("../fonts/tahoma/alsrubl-tahoma-bold.eot");
-  src: url("../fonts/tahoma/alsrubl-tahoma-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/tahoma/alsrubl-tahoma-bold.woff") format("woff"), url("../fonts/tahoma/alsrubl-tahoma-bold.ttf") format("truetype"), url("../fonts/tahoma/alsrubl-tahoma-bold.svg#ALSRublTahomaItalic") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
 body {
   font-family: 'Noto Sans', sans-serif;
   background-color: #FAFAFA;
@@ -54,6 +40,7 @@ body {
   width: 318px;
   margin-top: 35px;
   padding: 19px 18px 28px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid;
   background-color: #fff;
@@ -102,6 +89,8 @@ body {
   opacity: 0; }
 
 .option-list__checkbox:not(checked) + label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   line-height: 20px;
   position: relative;
@@ -115,6 +104,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 5px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid #5EC3EA;
   background: #fff; }
@@ -171,6 +161,7 @@ body {
   padding: 19px 37px 30px 37px;
   border: 3px solid #41C1F1;
   border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   font-weight: bold; }
 
@@ -188,6 +179,8 @@ body {
   margin-bottom: 12px; }
 
 .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 22px;
   line-height: 20px;
@@ -255,9 +248,6 @@ body {
   border-top: 2px solid;
   border-color: #FF1818;
   -webkit-transform: rotate(-8deg);
-  -moz-transform: rotate(-8deg);
-  -ms-transform: rotate(-8deg);
-  -o-transform: rotate(-8deg);
   transform: rotate(-8deg); }
 
 .button_premium {
