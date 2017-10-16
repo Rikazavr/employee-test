@@ -1,0 +1,67 @@
+.option-list__item{
+	margin-top: 13px;
+	text-align: left;
+}
+
+.option-list__icon-wrapper{
+    margin-right: 8px;
+}
+
+.option-list__icon{
+	vertical-align: middle;
+}
+
+.option-list__checkbox + label {
+	cursor: pointer;
+}
+
+.option-list__checkbox:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+
+.option-list__checkbox:not(checked) + label {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	line-height: 20px;
+	position: relative;
+	padding: 0 0 0 36px;
+}
+
+.option-list__checkbox:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border:2px solid #5EC3EA;
+	background: #fff;
+}
+
+.option-list__checkbox:not(checked) + label:after {
+  display: none;
+  content: '';
+  position: absolute;
+  background: url("../images/tick.svg") center no-repeat;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.option-list__checkbox:checked + label:before {
+  background: #5EC3EA;
+}
+
+.option-list__checkbox:checked + label:after {
+  display: block;
+}
+
+.option-list__hor-line{
+	margin: 23px 0 13px 0;
+}

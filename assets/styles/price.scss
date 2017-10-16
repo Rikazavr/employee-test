@@ -1,0 +1,29 @@
+.price{
+	line-height: 1.47em;
+}
+
+.price__sup-text{
+	position: relative;
+	color: #6A747A;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 14px;
+}
+
+.price__sup-text:before {
+  position: absolute;
+  width: 45px;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: #FF1818;
+  
+  -webkit-transform:rotate(-8deg);
+  transform:rotate(-8deg);
+}
+
+.price__icon{
+  width: 11px;
+}
